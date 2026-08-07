@@ -3,22 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="VIASEAM interactive fashion magazine">
-  <title>VIASEAM — Interactive Magazine</title>
+  <meta name="description" content="VIASEAM 互动杂志">
+  <title>VIASEAM · 互动杂志</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="ambient ambient-one"></div>
   <div class="ambient ambient-two"></div>
-
   <main class="site-shell">
     <header class="site-header">
-      <a class="brand-mark" href="#top" aria-label="VIASEAM home">VIASEAM<span>®</span></a>
+      <a class="brand-mark" href="#top" aria-label="VIASEAM 首页">VIASEAM<span>®</span></a>
       <div class="header-meta">ROUTE 01 · VIA TIDE<br><small>共享十八分钟 / SHARED 18 MINUTES</small></div>
       <a class="download-link" href="assets/VIASEAM_杂志.pdf" download>下载 PDF / DOWNLOAD</a>
     </header>
 
-    <section id="top" class="hero" aria-label="VIASEAM cover">
+    <section id="top" class="hero" aria-label="VIASEAM 封面">
       <div class="wave wave-hero" aria-hidden="true"><i></i><i></i><i></i></div>
       <div class="hero-copy">
         <p class="eyebrow">ISSUE 01 · 2027 SPRING / SUMMER</p>
@@ -26,80 +25,25 @@
         <p class="hero-title">路线不变，水面持续移动<br><em>THE ROUTE STAYS. THE WATER MOVES.</em></p>
         <button class="enter-button" id="enterButton">进入杂志 / ENTER VIASEAM <span>↗</span></button>
       </div>
-      <div class="cover-frame">
-        <img src="assets/pages/page-01.jpg" alt="VIASEAM magazine cover">
-        <span class="cover-spine"></span>
-      </div>
+      <div class="cover-frame"><img src="assets/pages/page-01.jpg" alt="VIASEAM 杂志封面"><span class="cover-spine"></span></div>
       <p class="scroll-note">SCROLL TO EXPLORE · 向下探索</p>
     </section>
 
-    <section class="magazine-section is-hidden" id="magazine" aria-label="Interactive magazine">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">VIASEAM DIGITAL EDITION</p>
-          <h2>翻开你的路线 <em>Open your route</em></h2>
-        </div>
-        <nav class="quick-nav" aria-label="Magazine shortcuts">
-          <button data-jump="looks">LOOKS / 造型</button>
-          <button data-jump="campaign">CAMPAIGN / 故事</button>
-        </nav>
-      </div>
-
-      <div class="book-wrap">
-        <button class="book-arrow book-arrow-left" id="prevButton" aria-label="Previous page">←</button>
-        <div class="book" id="book" tabindex="0" aria-label="翻页杂志">
-          <div class="book-shadow"></div>
-          <div class="spine-shadow"></div>
-          <div class="page-slot" id="leftPage"></div>
-          <div class="page-slot" id="rightPage"></div>
-          <div class="turn-sheet" id="turnSheet" aria-hidden="true"></div>
-        </div>
-        <button class="book-arrow book-arrow-right" id="nextButton" aria-label="Next page">→</button>
-      </div>
-      <div class="book-controls">
-        <span id="pageLabel">P. 02—03 / 28</span>
-        <div class="progress-track"><span id="progressBar"></span></div>
-        <span class="hint">点击两侧 · 键盘 ← → · 手机左右滑动</span>
-      </div>
+    <section class="magazine-section is-hidden" id="magazine" aria-label="互动杂志">
+      <div class="section-heading"><div><p class="eyebrow">VIASEAM DIGITAL EDITION</p><h2>翻开你的路线 <em>Open your route</em></h2></div><nav class="quick-nav" aria-label="杂志快捷入口"><button data-jump="looks">LOOKS / 造型</button><button data-jump="campaign">CAMPAIGN / 故事</button></nav></div>
+      <div class="book-wrap"><button class="book-arrow book-arrow-left" id="prevButton" aria-label="上一页">←</button><div class="book" id="book" tabindex="0" aria-label="翻页杂志"><div class="book-shadow"></div><div class="spine-shadow"></div><div class="page-slot" id="leftPage"></div><div class="page-slot" id="rightPage"></div><div class="turn-sheet" id="turnSheet" aria-hidden="true"></div></div><button class="book-arrow book-arrow-right" id="nextButton" aria-label="下一页">→</button></div>
+      <div class="book-controls"><span id="pageLabel">P. 02—03 / 28</span><div class="progress-track"><span id="progressBar"></span></div><span class="hint">点击两侧 · 键盘 ← → · 手机左右滑动</span></div>
     </section>
 
-    <section class="looks-section" id="looks" aria-label="Interactive looks">
-      <div class="section-heading section-heading-tight">
-        <div>
-          <p class="eyebrow">INTERACTIVE LOOKS / 重点造型</p>
-          <h2>五套重点 Look <em>Five key looks</em></h2>
-        </div>
-        <p class="section-intro">悬停查看款式、面料与设计细节。<br>Hover to reveal the story behind each look.</p>
-      </div>
-      <div class="palette" aria-label="Color palette">
-        <span>色卡 / PALETTE</span>
-        <button class="swatch active" data-color="#d8d5c8" style="--swatch:#d8d5c8" aria-label="Cloud Dancer"></button>
-        <button class="swatch" data-color="#9aacc0" style="--swatch:#9aacc0" aria-label="Misty Blue"></button>
-        <button class="swatch" data-color="#c8b79d" style="--swatch:#c8b79d" aria-label="Shifting Sand"></button>
-        <button class="swatch" data-color="#355b83" style="--swatch:#355b83" aria-label="Blue Ribbon"></button>
-        <button class="swatch" data-color="#c67b70" style="--swatch:#c67b70" aria-label="Coral Rose"></button>
-        <output id="colorName">CLOUD DANCER</output>
-      </div>
+    <section class="looks-section" id="looks" aria-label="五套重点造型">
+      <div class="section-heading section-heading-tight"><div><p class="eyebrow">INTERACTIVE LOOKS / 重点造型</p><h2>五套重点 Look <em>Five key looks</em></h2></div><p class="section-intro">悬停查看款式、面料与设计细节。<br>Hover to reveal the story behind each look.</p></div>
+      <div class="palette" aria-label="色卡"><span>色卡 / PALETTE</span><button class="swatch active" data-color="#d8d5c8" style="--swatch:#d8d5c8" aria-label="Cloud Dancer"></button><button class="swatch" data-color="#9aacc0" style="--swatch:#9aacc0" aria-label="Misty Blue"></button><button class="swatch" data-color="#c8b79d" style="--swatch:#c8b79d" aria-label="Shifting Sand"></button><button class="swatch" data-color="#355b83" style="--swatch:#355b83" aria-label="Blue Ribbon"></button><button class="swatch" data-color="#c67b70" style="--swatch:#c67b70" aria-label="Coral Rose"></button><output id="colorName">CLOUD DANCER</output></div>
       <div class="look-grid" id="lookGrid"></div>
     </section>
 
-    <section class="campaign-section" id="campaign" aria-label="Campaign story">
-      <div class="campaign-sticky">
-        <p class="eyebrow">CAMPAIGN / 品牌故事</p>
-        <h2>Shared<br><em>18 Minutes</em></h2>
-        <p>两位互不相识的女性，在清晨登上同一班城市渡轮。她们共享十八分钟的水面、风向与路线，抵岸后走向各自的生活。</p>
-        <div class="campaign-route"><span class="route-dot active"></span><span>登船</span><i></i><span class="route-dot"></span><span>同行</span><i></i><span class="route-dot"></span><span>抵达</span><i></i><span class="route-dot"></span><span>分开</span></div>
-      </div>
-      <div class="campaign-story" id="campaignStory"></div>
-    </section>
-
-    <footer class="site-footer">
-      <div>VIASEAM® · ROUTE 01</div>
-      <div>THE ROUTE STAYS. THE WATER MOVES.</div>
-      <a href="assets/VIASEAM_杂志.pdf" download>下载完整 PDF / DOWNLOAD PDF ↗</a>
-    </footer>
+    <section class="campaign-section" id="campaign" aria-label="品牌故事"><div class="campaign-sticky"><p class="eyebrow">CAMPAIGN / 品牌故事</p><h2>Shared<br><em>18 Minutes</em></h2><p>两位互不相识的女性，在清晨登上同一班城市渡轮。她们共享十八分钟的水面、风向与路线，抵岸后走向各自的生活。</p><div class="campaign-route"><span class="route-dot active"></span><span>登船</span><i></i><span class="route-dot"></span><span>同行</span><i></i><span class="route-dot"></span><span>抵达</span><i></i><span class="route-dot"></span><span>分开</span></div></div><div class="campaign-story" id="campaignStory"></div></section>
+    <footer class="site-footer"><div>VIASEAM® · ROUTE 01</div><div>THE ROUTE STAYS. THE WATER MOVES.</div><a href="assets/VIASEAM_杂志.pdf" download>下载完整 PDF / DOWNLOAD PDF ↗</a></footer>
   </main>
-
   <script src="script.js"></script>
 </body>
 </html>
